@@ -12,7 +12,7 @@ $('#authform').submit((e)=>{
             "password" : password
         },
         success:function(response){
-            response.status == 200 ? window.location = '/dahsboard' : alert(response.error);
+            response.status == 200 ? window.location = '/dashboard' : alert(response.error);
         }
 
     })
