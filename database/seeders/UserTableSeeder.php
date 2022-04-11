@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Cinema;
 use Illuminate\Database\Seeder;
 use App\Models\User;
 class UserTableSeeder extends Seeder

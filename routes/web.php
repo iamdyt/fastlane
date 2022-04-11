@@ -18,6 +18,9 @@ Route::get('/', function () {
 });
 
 Route::get('/auth', 'UserController@getAuthPage')->name('user.auth');
+Route::get('dashboard', 'UserController@getDashboard')->name('get.dashboard');
+Route::get('movies', 'MovieController@allMovies')->name('all.movies');
 
 // API
 Route::post('auth/login', 'UserController@loginUser')->name('login.user');
+Route::post('movie/add', 'MovieController@addMovie')->name('add.movie');
