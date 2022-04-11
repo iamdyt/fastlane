@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('all.movies');
 });
 
 Route::get('/auth', 'UserController@getAuthPage')->name('user.auth');
-Route::get('dashboard', 'UserController@getDashboard')->name('get.dashboard');
+Route::get('dashboard', 'UserController@getDashboard')->middleware('loggedin')->name('get.dashboard');
 Route::get('movies', 'MovieController@allMovies')->name('all.movies');
 
 // API

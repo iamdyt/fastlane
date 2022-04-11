@@ -21,7 +21,7 @@ class MovieRepository{
     }
 
     public function allMovies(){
-        $movies = Movie::all();
+        $movies = Movie::whereStatus('published')->get();
         return view('movies', compact('movies'));
     }
 }
