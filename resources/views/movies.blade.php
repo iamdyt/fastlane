@@ -12,7 +12,7 @@
 
         </nav>
         <div class="row mt-5">
-            
+
             @foreach($movies as $mv)
                 <div class="col-md-4">
                     <div class="card card-body">
@@ -33,7 +33,6 @@
             @endforeach
         </div>
     </section>
-
 @endsection
 
 @push('scripts')
